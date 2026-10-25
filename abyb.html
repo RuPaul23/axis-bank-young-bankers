@@ -3,33 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Axis Bank Young Bankers (ABYB) Program | Admissions Open | Adda247 Skills</title>
-  <meta name="description" content="Apply for Axis Bank Young Bankers Program (ABYB). Start your career as Assistant Manager at ₹4,54,000 PA. Earn ₹5,000/mo stipend, PG Diploma from NITTE University, and 100% assured placement.">
-  <meta name="keywords" content="Axis Bank Young Bankers Program, ABYB, Axis Bank Assistant Manager, Adda247 Skills ABYB, NITTE University Banking Diploma, Banking Jobs Freshers">
-  <meta property="og:title" content="Axis Bank Young Bankers Program (ABYB) - Assistant Manager">
-  <meta property="og:description" content="Kickstart your banking career as Assistant Manager at ₹4.54 LPA with Axis Bank. Freshers eligible.">
+  <title>Axis Bank Young Bankers Program (ABYB) | Campus Recruitment &amp; Application</title>
+  <meta name="description" content="Apply for Axis Bank Young Bankers Program. Direct recruitment as Assistant Manager at ₹4.54 LPA. Fresh graduates eligible. Upload credentials to apply.">
   
+  <!-- Open Graph for WhatsApp & Social Sharing -->
+  <meta property="og:title" content="Axis Bank Young Bankers Program - Assistant Manager (₹4.54 LPA)">
+  <meta property="og:description" content="Direct induction as Assistant Manager with Axis Bank. Fresh graduates (50%+) eligible. 1-Year PG Diploma from NITTE University. Apply & upload credentials now!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://career247.s3.ap-south-1.amazonaws.com/media/file_1754649236153_h.webp">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="styles.css">
   <style>
-    .lead-counter-pill {
-      background: #FEF3C7;
-      color: #92400E;
-      border: 1px solid #FDE68A;
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: var(--radius-full);
+    /* Minimal Modern & Credential Upload Styles */
+    .icon-badge-card {
+      background: #FFFFFF;
+      border: 1.5px solid #F1D5E2;
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      transition: all var(--transition-fast);
+    }
+    .icon-badge-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--axis-primary);
+      box-shadow: var(--shadow-md);
+    }
+    .icon-box-round {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--axis-primary-soft);
+      color: var(--axis-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .file-upload-box {
+      border: 2px dashed #CBD5E1;
+      border-radius: var(--radius-md);
+      padding: 16px;
+      background: #F8FAFC;
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      position: relative;
+    }
+    .file-upload-box:hover, .file-upload-box.has-file {
+      border-color: var(--axis-primary);
+      background: #FFF5F9;
+    }
+    .file-upload-box input[type="file"] {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+    .file-status-tag {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #059669;
+      margin-top: 6px;
+    }
+    .wa-chat-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #25D366;
+      color: #FFFFFF !important;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      text-decoration: none;
     }
     .leads-dashboard-toggle {
       position: fixed;
@@ -62,7 +123,7 @@
       font-size: 0.75rem;
     }
     .lead-table-wrapper {
-      max-height: 380px;
+      max-height: 420px;
       overflow-y: auto;
       margin-top: 14px;
       border: 1px solid var(--border-subtle);
@@ -71,7 +132,7 @@
     .lead-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-align: left;
     }
     .lead-table th {
@@ -80,11 +141,13 @@
       position: sticky;
       top: 0;
       color: var(--text-dark);
+      font-weight: 700;
     }
     .lead-table td {
       padding: 10px 12px;
       border-bottom: 1px solid var(--border-subtle);
       color: var(--text-body);
+      vertical-align: middle;
     }
     .lead-table tr:hover {
       background: #FFF5F8;
@@ -96,11 +159,13 @@
   <!-- Top Announcement Bar -->
   <div class="top-announcement">
     <div class="container announcement-inner">
-      <span class="badge-pill pulse"><i class="fa-solid fa-fire"></i> Freshers Eligible</span>
+      <span class="badge-pill pulse"><i class="fa-solid fa-graduation-cap"></i> University Hiring Drive</span>
       <p class="announcement-text">
-        <strong>Axis Bank Young Bankers (ABYB) Program</strong> • Join as <strong>Assistant Manager</strong> • Starting Salary <strong>₹4,54,000 PA</strong> • Freshers Welcome!
+        <strong>Axis Bank Young Bankers Program</strong> • Join as <strong>Assistant Manager (₹4.54 LPA)</strong> • Freshers Welcome!
       </p>
-      <a href="#quickLeadForm" class="announcement-cta" onclick="scrollToLeadForm(event)">Apply for ₹118 <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#applicationCard" class="announcement-cta" onclick="scrollToLeadForm(event)">
+        Upload Credentials &amp; Apply <i class="fa-solid fa-arrow-right"></i>
+      </a>
     </div>
   </div>
 
@@ -108,7 +173,7 @@
   <header class="site-header" id="navbar">
     <div class="container header-container">
       <div class="brand-group">
-        <a href="#hero" class="brand-logo axis-logo">
+        <a href="#hero" class="brand-logo">
           <div class="logo-burgundy-mark">
             <svg viewBox="0 0 100 100" class="axis-icon-svg" aria-label="Axis Bank">
               <polygon points="50,12 88,82 12,82" fill="#97144D"/>
@@ -123,26 +188,25 @@
         </a>
         <div class="brand-divider"></div>
         <div class="partner-badge">
-          <span class="partner-label">With</span>
+          <span class="partner-label">In Collaboration with</span>
           <span class="partner-name">Adda247 <span>Skills</span></span>
         </div>
       </div>
 
       <nav class="nav-menu" id="navMenu">
-        <a href="#about" class="nav-link active">About</a>
-        <a href="#snapshot" class="nav-link">Snapshot</a>
-        <a href="#curriculum" class="nav-link">Curriculum</a>
-        <a href="#fees" class="nav-link">Fee &amp; Loan</a>
-        <a href="#eligibility" class="nav-link">Eligibility</a>
-        <a href="#faqs" class="nav-link">FAQs</a>
+        <a href="#highlights" class="nav-link active"><i class="fa-solid fa-bolt"></i> Key Facts</a>
+        <a href="#snapshot" class="nav-link"><i class="fa-solid fa-chart-pie"></i> Snapshot</a>
+        <a href="#curriculum" class="nav-link"><i class="fa-solid fa-book"></i> Training</a>
+        <a href="#fees" class="nav-link"><i class="fa-solid fa-indian-rupee-sign"></i> Fee &amp; Loan</a>
+        <a href="#eligibility" class="nav-link"><i class="fa-solid fa-user-check"></i> Eligibility</a>
       </nav>
 
       <div class="header-actions">
         <button class="btn btn-outline btn-sm" onclick="openEligibilityModal()">
-          <i class="fa-solid fa-user-check"></i> Eligibility Test
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Eligibility Test
         </button>
         <button class="btn btn-primary btn-sm" onclick="scrollToLeadForm()">
-          <i class="fa-solid fa-bolt"></i> Apply Now (₹118)
+          <i class="fa-solid fa-cloud-arrow-up"></i> Apply &amp; Upload
         </button>
         <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
@@ -151,7 +215,7 @@
     </div>
   </header>
 
-  <!-- Hero Section with High-Converting Lead Capture Form -->
+  <!-- Hero Section with Minimal Facts + Direct Credential Upload Form -->
   <section class="hero-section" id="hero">
     <div class="hero-bg-shapes">
       <div class="shape shape-1"></div>
@@ -159,136 +223,143 @@
     </div>
 
     <div class="container hero-grid">
-      <!-- Left Content -->
+      <!-- Left Column: Fast Facts & Icons -->
       <div class="hero-content">
         <div class="hero-tag">
-          <i class="fa-solid fa-award"></i> 100% Placement-Linked • NITTE University PG Diploma
+          <i class="fa-solid fa-shield-halved"></i> Official Axis Bank &amp; NITTE University Program
         </div>
         <h1 class="hero-title">
           Axis Bank <br>
           <span class="highlight-maroon">Young Bankers Program</span>
         </h1>
         <p class="hero-subtitle">
-          Kickstart your banking career directly as an <strong>Assistant Manager (Branch Relationship Officer)</strong> at Axis Bank. Earn <strong>₹4,54,000 PA</strong> starting package, receive a 1-year Post Graduate Diploma from <strong>NITTE University</strong>, and recover up to <strong>~₹2.15 Lakh</strong> during training!
+          Direct campus-to-corporate pathway into Axis Bank as <strong>Assistant Manager (Branch Relationship Officer)</strong>.
         </p>
 
-        <!-- Target State Highlight -->
-        <div style="background: #FFF0F5; border-left: 4px solid var(--axis-primary); padding: 10px 16px; border-radius: 8px; margin-bottom: 22px;">
-          <p style="font-size: 0.88rem; color: #1E293B; margin: 0; line-height: 1.5;">
-            <i class="fa-solid fa-location-dot highlight-maroon"></i> <strong>Admissions Open:</strong> Applications open for candidates from Punjab, Haryana, Delhi NCR, Jammu, Himachal, Uttarakhand &amp; Pan-India.
-          </p>
+        <!-- Fast Stats 4-Card Minimal Grid -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px;">
+          <div class="icon-badge-card">
+            <div class="icon-box-round"><i class="fa-solid fa-id-badge"></i></div>
+            <div>
+              <span style="font-size: 0.72rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Designation</span>
+              <h4 style="font-size: 1.05rem; color: #0F172A; margin: 0;">Assistant Manager</h4>
+              <p style="font-size: 0.78rem; color: #64748B; margin: 0;">Branch Relationship Cadre</p>
+            </div>
+          </div>
+
+          <div class="icon-badge-card">
+            <div class="icon-box-round"><i class="fa-solid fa-sack-dollar"></i></div>
+            <div>
+              <span style="font-size: 0.72rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Starting Package</span>
+              <h4 style="font-size: 1.05rem; color: var(--axis-primary); margin: 0;">₹4,54,000 PA</h4>
+              <p style="font-size: 0.78rem; color: #64748B; margin: 0;">Gross CTC + Performance Bonus</p>
+            </div>
+          </div>
+
+          <div class="icon-badge-card">
+            <div class="icon-box-round"><i class="fa-solid fa-coins"></i></div>
+            <div>
+              <span style="font-size: 0.72rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Stipend &amp; Salary</span>
+              <h4 style="font-size: 1.05rem; color: #0F172A; margin: 0;">₹5,000 / Month</h4>
+              <p style="font-size: 0.78rem; color: #64748B; margin: 0;">Stipend (M1–4) + Salary from M5</p>
+            </div>
+          </div>
+
+          <div class="icon-badge-card">
+            <div class="icon-box-round"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <span style="font-size: 0.72rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Qualification</span>
+              <h4 style="font-size: 1.05rem; color: #0F172A; margin: 0;">NITTE PG Diploma</h4>
+              <p style="font-size: 0.78rem; color: #64748B; margin: 0;">1-Yr Post Graduate Diploma</p>
+            </div>
+          </div>
         </div>
 
-        <!-- 4 Highlights Grid -->
-        <div class="hero-highlights-grid">
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fa-solid fa-id-badge"></i></div>
-            <div class="highlight-text">
-              <h4>Assistant Manager (AM)</h4>
-              <p>Branch Relationship Officer cadre</p>
-            </div>
+        <!-- 3 Highlights Strip -->
+        <div style="background: #FFF5F9; border: 1px solid #F1D5E2; border-radius: var(--radius-md); padding: 14px 18px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <i class="fa-solid fa-circle-check highlight-green"></i> <strong>Freshers Welcome:</strong> 50%+ in Graduation
           </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-            <div class="highlight-text">
-              <h4>₹4,54,000 PA CTC</h4>
-              <p>Inclusive of loan benefits &amp; bonuses</p>
-            </div>
+          <div>
+            <i class="fa-solid fa-circle-check highlight-green"></i> <strong>Age 21–30:</strong> Generous age limit
           </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fa-solid fa-coins"></i></div>
-            <div class="highlight-text">
-              <h4>Earn While You Learn</h4>
-              <p>₹5,000/mo stipend + salary from Month 5</p>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div class="highlight-text">
-              <h4>NITTE University</h4>
-              <p>1-Year Post Graduate Diploma</p>
-            </div>
+          <div>
+            <i class="fa-solid fa-circle-check highlight-green"></i> <strong>₹2.15 Lakh:</strong> Recovered during program
           </div>
         </div>
 
         <div class="hero-cta-group">
           <button class="btn btn-primary btn-lg" onclick="scrollToLeadForm()">
-            <i class="fa-solid fa-bolt"></i> Apply Now (Exam Fee ₹118)
+            <i class="fa-solid fa-cloud-arrow-up"></i> Upload Credentials &amp; Apply
           </button>
           <button class="btn btn-secondary btn-lg" onclick="openSyllabusModal()">
-            <i class="fa-solid fa-download"></i> Download Brochure &amp; Syllabus
+            <i class="fa-solid fa-download"></i> Get Syllabus PDF
           </button>
-        </div>
-
-        <div class="hero-trust-metrics">
-          <div class="metric">
-            <strong>Freshers</strong>
-            <span>Graduates with 50%+ Eligible</span>
-          </div>
-          <div class="metric-divider"></div>
-          <div class="metric">
-            <strong>Age 21-30</strong>
-            <span>Generous Age Eligibility</span>
-          </div>
-          <div class="metric-divider"></div>
-          <div class="metric">
-            <strong>₹2.15 Lakh</strong>
-            <span>Recovered during program</span>
-          </div>
         </div>
       </div>
 
-      <!-- Right Column: Digital Marketing High-Converting Lead Form -->
-      <div class="hero-card-wrapper" id="quickLeadForm">
+      <!-- Right Column: Student Credential & Application Form -->
+      <div class="hero-card-wrapper" id="applicationCard">
         <div class="hero-card">
           <div class="hero-card-header">
-            <div class="lead-counter-pill"><i class="fa-solid fa-users"></i> Fast Registration</div>
-            <h3 class="mt-2" style="font-size: 1.35rem; color: #0F172A;">Apply for ABYB Assessment</h3>
-            <p style="font-size: 0.84rem; color: #64748B;">Complete this 30-sec form to book your test slot (₹118 fee)</p>
+            <div class="lead-counter-pill"><i class="fa-solid fa-circle-dot highlight-green"></i> Direct Campus Application</div>
+            <h3 class="mt-2" style="font-size: 1.35rem; color: #0F172A;">Candidate Registration</h3>
+            <p style="font-size: 0.82rem; color: #64748B;">Upload your credentials for fast-track Axis Bank assessment (₹118 fee)</p>
           </div>
 
           <form id="leadCaptureForm" onsubmit="handleLeadCapture(event)">
-            <div class="form-group">
-              <label for="leadFullName"><i class="fa-solid fa-user"></i> Full Name *</label>
-              <input type="text" id="leadFullName" placeholder="e.g. Gurpreet Singh / Rohit Verma" required>
-            </div>
-
+            <!-- Name & WhatsApp -->
             <div class="form-row">
               <div class="form-group">
-                <label for="leadMobile"><i class="fa-solid fa-phone"></i> Mobile Number *</label>
+                <label for="leadFullName"><i class="fa-solid fa-user"></i> Full Name *</label>
+                <input type="text" id="leadFullName" placeholder="As on Aadhaar / Marksheet" required>
+              </div>
+              <div class="form-group">
+                <label for="leadMobile"><i class="fa-solid fa-phone"></i> WhatsApp Number *</label>
                 <input type="tel" id="leadMobile" placeholder="10-digit mobile" pattern="[0-9]{10}" required>
               </div>
+            </div>
+
+            <!-- Email & College -->
+            <div class="form-row">
               <div class="form-group">
                 <label for="leadEmail"><i class="fa-solid fa-envelope"></i> Email Address *</label>
                 <input type="email" id="leadEmail" placeholder="name@gmail.com" required>
               </div>
+              <div class="form-group">
+                <label for="leadCollege"><i class="fa-solid fa-building-columns"></i> College / University *</label>
+                <input type="text" id="leadCollege" placeholder="e.g. GNDU, Thapar, DU, PU" required>
+              </div>
             </div>
 
+            <!-- Degree & Graduation % -->
             <div class="form-row">
               <div class="form-group">
-                <label for="leadAge"><i class="fa-solid fa-calendar"></i> Age *</label>
-                <select id="leadAge" required>
-                  <option value="" disabled selected>Select Age</option>
-                  <option value="21-25">21 – 25 Years (Eligible)</option>
-                  <option value="26-30">26 – 30 Years (Eligible)</option>
-                  <option value="below-21">Below 21 (Not eligible)</option>
-                  <option value="above-30">Above 30 (Not eligible)</option>
+                <label for="leadDegree"><i class="fa-solid fa-award"></i> Degree / Stream *</label>
+                <select id="leadDegree" required>
+                  <option value="" disabled selected>Select Degree</option>
+                  <option value="B.Com / M.Com">B.Com / M.Com</option>
+                  <option value="BBA / MBA">BBA / MBA</option>
+                  <option value="B.Tech / BCA">B.Tech / BCA / IT</option>
+                  <option value="B.Sc / M.Sc">B.Sc / M.Sc</option>
+                  <option value="BA / Others">BA / Other Streams</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="leadGradScore"><i class="fa-solid fa-graduation-cap"></i> Graduation Marks *</label>
+                <label for="leadGradScore"><i class="fa-solid fa-percent"></i> Graduation Marks *</label>
                 <select id="leadGradScore" required>
-                  <option value="" disabled selected>Graduation %</option>
+                  <option value="" disabled selected>Graduation Score</option>
                   <option value="50-plus">50% or above (Eligible)</option>
-                  <option value="final-year">Final Year / Awaiting Result</option>
-                  <option value="below-50">Below 50% (Ineligible)</option>
+                  <option value="final-year">Final Year / Awaiting Results</option>
+                  <option value="below-50">Below 50% (Not eligible)</option>
                 </select>
               </div>
             </div>
 
+            <!-- State & City -->
             <div class="form-row">
               <div class="form-group">
-                <label for="leadState"><i class="fa-solid fa-map-location-dot"></i> State *</label>
+                <label for="leadState"><i class="fa-solid fa-location-dot"></i> State *</label>
                 <select id="leadState" required>
                   <option value="" disabled selected>Select State</option>
                   <option value="Punjab">Punjab</option>
@@ -299,8 +370,7 @@
                   <option value="Uttarakhand">Uttarakhand</option>
                   <option value="Uttar Pradesh">Uttar Pradesh</option>
                   <option value="Rajasthan">Rajasthan</option>
-                  <option value="Maharashtra">Maharashtra</option>
-                  <option value="Other">Other State</option>
+                  <option value="Other">Other States</option>
                 </select>
               </div>
               <div class="form-group">
@@ -309,198 +379,192 @@
               </div>
             </div>
 
+            <!-- CREDENTIALS UPLOAD BOXES -->
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; margin-bottom: 14px;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: #1E293B; display: block; margin-bottom: 8px;">
+                <i class="fa-solid fa-file-arrow-up highlight-maroon"></i> Upload Credentials (PDF / JPG)
+              </span>
+
+              <div class="form-row">
+                <!-- Resume Upload -->
+                <div class="file-upload-box" id="resumeBox">
+                  <input type="file" id="leadResumeFile" accept=".pdf,.doc,.docx,.jpg,.png" onchange="handleFileSelected('resume', this)">
+                  <i class="fa-solid fa-file-lines" style="font-size: 1.4rem; color: var(--axis-primary);"></i>
+                  <div style="font-size: 0.78rem; font-weight: 600; color: #0F172A; margin-top: 4px;">Upload Resume / CV</div>
+                  <span style="font-size: 0.68rem; color: #64748B;" id="resumeFileLabel">Tap to browse file</span>
+                </div>
+
+                <!-- Marksheet / College ID Upload -->
+                <div class="file-upload-box" id="marksheetBox">
+                  <input type="file" id="leadMarksheetFile" accept=".pdf,.doc,.docx,.jpg,.png" onchange="handleFileSelected('marksheet', this)">
+                  <i class="fa-solid fa-id-card" style="font-size: 1.4rem; color: var(--axis-primary);"></i>
+                  <div style="font-size: 0.78rem; font-weight: 600; color: #0F172A; margin-top: 4px;">Marksheet or College ID</div>
+                  <span style="font-size: 0.68rem; color: #64748B;" id="marksheetFileLabel">Tap to browse file</span>
+                </div>
+              </div>
+            </div>
+
             <div class="form-checkbox">
               <input type="checkbox" id="leadConsent" required checked>
               <label for="leadConsent">
-                I agree to receive assessment guidelines and admission calls from Adda247 &amp; Axis Bank.
+                I agree to the Axis Bank program terms and verify that the uploaded credentials are accurate.
               </label>
             </div>
 
             <button type="submit" class="btn btn-primary btn-block submit-hero-btn" id="leadSubmitBtn">
-              <span>Submit &amp; Proceed to Assessment (₹118)</span>
+              <span>Submit Application &amp; Credentials (₹118)</span>
               <i class="fa-solid fa-arrow-right"></i>
             </button>
-            <p class="form-micro-text"><i class="fa-solid fa-lock"></i> 100% confidential. No spam guaranteed.</p>
+            <p class="form-micro-text"><i class="fa-solid fa-shield-check"></i> 100% confidential. Instant verification by admissions team.</p>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 1: Why Choose Axis Bank Young Bankers Program -->
-  <section class="section differentiators-section" id="about">
+  <!-- Section 1: Fast Facts (Minimal Cards & Icons) -->
+  <section class="section" id="highlights" style="background: #FFFFFF;">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">Elite Banking Pedagogy</span>
-        <h2 class="section-title">Why Choose <span class="highlight-maroon">Axis Bank Young Bankers Program?</span></h2>
-        <p class="section-subtitle">
-          A fine blend of campus training, branch internship, and on-the-job mentorship designed to launch your banking career.
-        </p>
+        <span class="section-tag">Program Essentials</span>
+        <h2 class="section-title">Key Highlights at a <span class="highlight-maroon">Glance</span></h2>
+        <p class="section-subtitle">Why thousands of graduates choose the Axis Bank Young Bankers Program.</p>
       </div>
 
       <div class="differentiator-grid">
         <div class="diff-card">
           <div class="diff-icon-box"><i class="fa-solid fa-rocket"></i></div>
-          <h3>Fast Track Your Career</h3>
-          <p>Axis Bank is a leading private sector bank in India, offering a complete range of personal and corporate financial services.</p>
-          <span class="card-accent-pill">Top Private Bank</span>
+          <h3>Fast Track AM Cadre</h3>
+          <p>Join Axis Bank directly as an Assistant Manager upon completing the training modules.</p>
+          <span class="card-accent-pill">Rank: Assistant Manager</span>
         </div>
 
         <div class="diff-card">
-          <div class="diff-icon-box"><i class="fa-solid fa-coins"></i></div>
-          <h3>Earn While You Learn</h3>
-          <p>Start earning ₹5,000/mo stipend from Month 1 to 4 during campus training, followed by regular monthly salary from Month 5. Recover ~₹2.15 Lakh early!</p>
-          <span class="card-accent-pill highlight">Quick ROI</span>
-        </div>
-
-        <div class="diff-card">
-          <div class="diff-icon-box"><i class="fa-solid fa-brain"></i></div>
-          <h3>Enriching Learning Journey</h3>
-          <p>Build your knowledge, skills, and attitude through an experiential learning process from experienced peers and expert industry mentors.</p>
-          <span class="card-accent-pill">Experiential</span>
-        </div>
-
-        <div class="diff-card">
-          <div class="diff-icon-box"><i class="fa-solid fa-sack-dollar"></i></div>
-          <h3>Starting Salary of 4.54 LPA**</h3>
-          <p>MBA-level starting compensation inclusive of non-cashable loan benefits, gratuity, medical cover, and performance-linked bonuses.</p>
+          <div class="diff-icon-box"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+          <h3>₹4.54 LPA Salary</h3>
+          <p>Competitive MBA-level starting compensation with medical insurance, PF, and bonuses.</p>
           <span class="card-accent-pill highlight">₹4,54,000 PA</span>
         </div>
 
         <div class="diff-card">
-          <div class="diff-icon-box"><i class="fa-solid fa-briefcase"></i></div>
-          <h3>Join as Assistant Manager (AM)</h3>
-          <p>On completion of the program, join Axis Bank as a Branch Relationship Officer (BRO) with full employee grade privileges.</p>
-          <span class="card-accent-pill">Direct AM Rank</span>
+          <div class="diff-icon-box"><i class="fa-solid fa-coins"></i></div>
+          <h3>₹5,000 / mo Stipend</h3>
+          <p>Earn stipends during campus training and recover ~₹2.15 Lakh before completing the year.</p>
+          <span class="card-accent-pill highlight">Earn While You Learn</span>
         </div>
 
         <div class="diff-card">
-          <div class="diff-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
-          <h3>PG Diploma from NITTE University</h3>
-          <p>Get a recognized 1-year Post Graduate Diploma in Banking Services from the esteemed NITTE University.</p>
-          <span class="card-accent-pill">University Accredited</span>
+          <div class="diff-icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3>NITTE University Diploma</h3>
+          <p>Post Graduate Diploma in Banking Services awarded upon graduation.</p>
+          <span class="card-accent-pill">1-Year PG Diploma</span>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box"><i class="fa-solid fa-building-columns"></i></div>
+          <h3>100% Axis Bank Loan</h3>
+          <p>Full student loan available at 13% ROI with EMIs deducted from salary after 6 months on job.</p>
+          <span class="card-accent-pill">Zero Upfront Barrier</span>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box"><i class="fa-solid fa-check-double"></i></div>
+          <h3>Freshers Eligible</h3>
+          <p>Graduates with 50%+ in any stream. No prior work experience needed.</p>
+          <span class="card-accent-pill">Age: 21 to 30 Years</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 2: Program Snapshot (Invest, Learn, Earn, Grow) -->
+  <!-- Section 2: Program Snapshot (4 Numbers to Remember) -->
   <section class="section" id="snapshot" style="background: linear-gradient(180deg, #FFF0F5 0%, #FAFCFE 100%);">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">At a Glance</span>
+        <span class="section-tag">Numbers that Matter</span>
         <h2 class="section-title">Program <span class="highlight-maroon">Snapshot</span></h2>
-        <p class="section-subtitle">A transparent overview of your investment, learning journey, earnings, and career growth.</p>
+        <p class="section-subtitle">Invest, learn, earn, and graduate with an assured career.</p>
       </div>
 
       <div class="snapshot-cards-grid">
-        <!-- Card 1: Invest -->
-        <div class="diff-card" style="background: #FFFFFF;">
-          <div class="diff-icon-box" style="background: #E6FFF2; color: #059669;">
-            <i class="fa-solid fa-wallet"></i>
-          </div>
-          <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #64748B;">Total Investment</span>
-          <h3 style="font-size: 1.85rem; color: #1E293B; margin: 4px 0;">₹ 2.80 L</h3>
-          <p style="font-size: 0.82rem; color: #64748B;">(₹ 2.37L + 18% GST)</p>
-          <div style="border-top: 1px solid var(--border-subtle); margin-top: 14px; padding-top: 10px; font-size: 0.82rem; color: #475569;">
-            <div><i class="fa-solid fa-check highlight-green"></i> <strong>Includes Tuition &amp; Boarding</strong></div>
-            <div><i class="fa-solid fa-check highlight-green"></i> AC hostel &amp; food covered during campus</div>
+        <div class="diff-card" style="background:#fff;">
+          <div class="diff-icon-box" style="background:#E6FFF2; color:#059669;"><i class="fa-solid fa-wallet"></i></div>
+          <span style="font-size:0.75rem; color:#64748B; font-weight:700; text-transform:uppercase;">Invest</span>
+          <h3 style="font-size:1.9rem; color:#0F172A; margin:4px 0;">₹ 2.80 L</h3>
+          <p style="font-size:0.82rem; color:#64748B;">₹2.37L + 18% GST</p>
+          <div style="border-top:1px solid #E2E8F0; margin-top:12px; padding-top:10px; font-size:0.82rem; color:#334155;">
+            <i class="fa-solid fa-check highlight-green"></i> <strong>Includes AC Hostel &amp; Food</strong>
           </div>
         </div>
 
-        <!-- Card 2: Learn -->
-        <div class="diff-card" style="background: #FFFFFF;">
-          <div class="diff-icon-box" style="background: #E5F3FF; color: #0284C7;">
-            <i class="fa-solid fa-book-open-reader"></i>
-          </div>
-          <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #64748B;">1-Year Structure</span>
-          <div style="display: flex; gap: 6px; margin: 8px 0;">
-            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 6px; border-radius: 8px; text-align: center; flex: 1;">
-              <strong style="color: var(--axis-primary); font-size: 1.1rem;">4</strong>
-              <div style="font-size: 0.65rem; color: #64748B;">Months Campus</div>
-            </div>
-            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 6px; border-radius: 8px; text-align: center; flex: 1;">
-              <strong style="color: var(--axis-primary); font-size: 1.1rem;">3</strong>
-              <div style="font-size: 0.65rem; color: #64748B;">Months Intern</div>
-            </div>
-            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 6px; border-radius: 8px; text-align: center; flex: 1;">
-              <strong style="color: var(--axis-primary); font-size: 1.1rem;">5</strong>
-              <div style="font-size: 0.65rem; color: #64748B;">Months OJT</div>
-            </div>
-          </div>
-          <div style="border-top: 1px solid var(--border-subtle); margin-top: 6px; padding-top: 8px; font-size: 0.82rem; color: #475569;">
-            <i class="fa-solid fa-check highlight-maroon"></i> 1 Year Comprehensive Training
+        <div class="diff-card" style="background:#fff;">
+          <div class="diff-icon-box" style="background:#E5F3FF; color:#0284C7;"><i class="fa-solid fa-book-open-reader"></i></div>
+          <span style="font-size:0.75rem; color:#64748B; font-weight:700; text-transform:uppercase;">Learn</span>
+          <h3 style="font-size:1.9rem; color:#0F172A; margin:4px 0;">1 Year</h3>
+          <p style="font-size:0.82rem; color:#64748B;">4M Campus + 3M Intern + 5M OJT</p>
+          <div style="border-top:1px solid #E2E8F0; margin-top:12px; padding-top:10px; font-size:0.82rem; color:#334155;">
+            <i class="fa-solid fa-check highlight-maroon"></i> NITTE University PGD Degree
           </div>
         </div>
 
-        <!-- Card 3: Earn -->
-        <div class="diff-card" style="background: #FFFFFF;">
-          <div class="diff-icon-box" style="background: #FFF6E5; color: #D97706;">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-          </div>
-          <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #64748B;">In-Program Payout</span>
-          <h3 style="font-size: 1.7rem; color: #1E293B; margin: 4px 0;">₹ 5,000 <span style="font-size: 0.85rem; color: #64748B;">/ mo</span></h3>
-          <p style="font-size: 0.8rem; color: #64748B;">Months 1–4 Stipend • Salary from Month 5</p>
-          <div style="background: #FFF0F5; border-radius: 6px; padding: 6px; margin-top: 12px; font-size: 0.78rem; color: var(--axis-primary); font-weight: 700;">
-            Recover ~₹2.15 Lakh during training!
+        <div class="diff-card" style="background:#fff;">
+          <div class="diff-icon-box" style="background:#FFF6E5; color:#D97706;"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <span style="font-size:0.75rem; color:#64748B; font-weight:700; text-transform:uppercase;">Earn</span>
+          <h3 style="font-size:1.9rem; color:#0F172A; margin:4px 0;">₹ 5,000</h3>
+          <p style="font-size:0.82rem; color:#64748B;">Monthly Stipend (Months 1–4)</p>
+          <div style="border-top:1px solid #E2E8F0; margin-top:12px; padding-top:10px; font-size:0.82rem; color:#334155;">
+            <i class="fa-solid fa-check highlight-green"></i> Recover ~₹2.15L during year
           </div>
         </div>
 
-        <!-- Card 4: Grow -->
-        <div class="diff-card" style="background: #FFFFFF;">
-          <div class="diff-icon-box" style="background: #F9E5FF; color: #9333EA;">
-            <i class="fa-solid fa-chart-line"></i>
-          </div>
-          <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: #64748B;">Final Designation</span>
-          <h3 style="font-size: 1.25rem; color: #1E293B; margin: 4px 0;">Assistant Manager</h3>
-          <p style="font-size: 0.82rem; color: var(--axis-primary); font-weight: 700;">₹ 4.54 LPA Gross CTC</p>
-          <div style="border-top: 1px solid var(--border-subtle); margin-top: 14px; padding-top: 10px; font-size: 0.82rem; color: #475569;">
-            Absorbed on bank rolls after campus &amp; internship.
+        <div class="diff-card" style="background:#fff;">
+          <div class="diff-icon-box" style="background:#F9E5FF; color:#9333EA;"><i class="fa-solid fa-chart-line"></i></div>
+          <span style="font-size:0.75rem; color:#64748B; font-weight:700; text-transform:uppercase;">Grow</span>
+          <h3 style="font-size:1.9rem; color:#0F172A; margin:4px 0;">₹ 4.54 LPA</h3>
+          <p style="font-size:0.82rem; color:#64748B;">Assistant Manager CTC</p>
+          <div style="border-top:1px solid #E2E8F0; margin-top:12px; padding-top:10px; font-size:0.82rem; color:#334155;">
+            <i class="fa-solid fa-check highlight-maroon"></i> Permanent Branch Onboarding
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 3: Campus Training & Curriculum -->
+  <!-- Section 3: Training & Campus Details -->
   <section class="section" id="curriculum" style="background: #FFFFFF;">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">Campus Immersion</span>
+        <span class="section-tag">Training Modules</span>
         <h2 class="section-title">4 Months Residential <span class="highlight-maroon">Campus Training</span></h2>
-        <p class="section-subtitle">
-          Boarding, lodging, library, smart computer labs, and finacle software simulations provided at campus.
-        </p>
+        <p class="section-subtitle">Accommodation, meals, computer labs, and simulated Finacle core banking.</p>
       </div>
 
       <div class="compensation-grid">
         <div class="comp-card" style="background: var(--bg-surface); border-left: 6px solid var(--axis-primary);">
-          <h3>Curriculum Breakdown</h3>
-          <p class="comp-description">Structured into two intensive 2-month modules</p>
+          <h3>Curriculum Essentials</h3>
+          <p class="comp-description">Practical, job-focused modules taught by senior banking leaders</p>
 
           <div style="margin-bottom: 20px;">
             <h4 style="color: var(--axis-primary); font-size: 1.05rem; margin-bottom: 8px;">
               <i class="fa-solid fa-circle-check"></i> Term 1 (Foundations &amp; Retail Banking)
             </h4>
             <ul class="check-list">
-              <li>Retail Banking Solutions (CASA, Term Deposits, Personal Loans)</li>
-              <li>Business English &amp; Corporate Communication</li>
-              <li>Banking Sales, Ethical Practices &amp; Customer Delight</li>
-              <li>Branch Operations, Cash Handling &amp; Regulatory Compliance</li>
-              <li>Payment Systems, UPI, Merchant Solutions &amp; Core Banking</li>
+              <li>Retail Banking: CASA, Deposits, Personal Loans</li>
+              <li>Business English, Professional Etiquettes &amp; Customer Relations</li>
+              <li>Cash Management, Branch Operations &amp; RBI Compliance</li>
+              <li>Finacle Core Banking &amp; Digital Payments</li>
             </ul>
           </div>
 
           <div>
             <h4 style="color: var(--axis-primary); font-size: 1.05rem; margin-bottom: 8px;">
-              <i class="fa-solid fa-circle-check"></i> Term 2 (Relationship &amp; Credit Advisory)
+              <i class="fa-solid fa-circle-check"></i> Term 2 (Credit &amp; Relationship Management)
             </h4>
             <ul class="check-list">
-              <li>Relationship Management &amp; High Net-Worth Client Engagement</li>
-              <li>Digital Banking, CBS &amp; Finacle Systems Training</li>
-              <li>Financial Planning, Mutual Funds &amp; Wealth Advisory</li>
+              <li>High-Net-Worth Relationship Advisory &amp; Cross-Selling</li>
               <li>Business Credit Assessment &amp; Working Capital Basics</li>
-              <li>Trade Finance, Forex &amp; Cross-Border Transactions</li>
+              <li>Trade Finance, Letters of Credit (LC) &amp; Forex</li>
+              <li>Financial Planning &amp; Mutual Funds</li>
             </ul>
           </div>
         </div>
@@ -509,14 +573,12 @@
           <div style="font-size: 2.8rem; color: var(--axis-primary); margin-bottom: 12px;">
             <i class="fa-solid fa-building-columns"></i>
           </div>
-          <h3>Life at the Campus</h3>
+          <h3>Official Campus Tour</h3>
           <p style="color: var(--text-body); font-size: 0.9rem; margin-bottom: 20px;">
-            Experience world-class residential facilities, air-conditioned smart classrooms, sports zones, and full boarding meals covered in the program fee.
+            Air-conditioned smart classrooms, libraries, modern student hostels, and indoor sports.
           </p>
           
           <div style="border: 2px dashed var(--border-light); padding: 20px; border-radius: 12px; background: #FFFDFE;">
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Official Campus Walkthrough</span>
-            <h4 style="margin: 6px 0 14px; font-size: 1.05rem;">Take a Virtual Tour of the Banking Campus</h4>
             <a href="https://www.youtube.com/watch?v=zDBwafHdU9w" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
               <i class="fa-brands fa-youtube"></i> Watch Official Campus Video
             </a>
@@ -526,23 +588,23 @@
     </div>
   </section>
 
-  <!-- Section 4: Fees, Financing & Axis Bank Loan -->
+  <!-- Section 4: Fees & 100% Loan -->
   <section class="section fees-section" id="fees">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">Fee &amp; Financing</span>
-        <h2 class="section-title">Payment Plans &amp; <span class="highlight-maroon">Axis Bank Education Loan</span></h2>
-        <p class="section-subtitle">Transparent milestone fee with 100% loan assistance. Start EMIs after salary starts.</p>
+        <span class="section-tag">Fee &amp; Loan</span>
+        <h2 class="section-title">Transparent Fees &amp; <span class="highlight-maroon">Axis Bank Loan</span></h2>
+        <p class="section-subtitle">Pay zero tuition out-of-pocket during training with Axis Bank loan.</p>
       </div>
 
       <div class="fees-container-grid">
         <div class="fee-card glass-panel">
-          <div class="fee-badge">Milestone Installments</div>
+          <div class="fee-badge">Total Course Fee</div>
           <div class="fee-header">
-            <h3>Total Program Fee</h3>
+            <h3>All-Inclusive Fee</h3>
             <div class="total-fee">₹ 2,37,288 <span>+ 18% GST (₹ 2,80,000 Total)</span></div>
             <p class="fee-guarantee-note">
-              <i class="fa-solid fa-shield-halved"></i> Includes full tuition, accommodation, study kits, university diploma exam fees, and food.
+              <i class="fa-solid fa-shield-halved"></i> Includes tuition, AC hostel accommodation, meals, study kits, and NITTE university exam fees.
             </p>
           </div>
 
@@ -554,7 +616,7 @@
                   <strong>Registration Fee</strong>
                   <span class="inst-price">₹ 4,237 + GST (₹ 5,000)</span>
                 </div>
-                <p>Payable at admission confirmation</p>
+                <p>On accepting the admission letter</p>
               </div>
             </div>
 
@@ -565,7 +627,7 @@
                   <strong>Installment 1</strong>
                   <span class="inst-price">₹ 1,20,738 + GST (₹ 1,42,470)</span>
                 </div>
-                <p>At time of campus admission (Coverable via Axis Bank Education Loan)</p>
+                <p>At campus admission (100% Loan available)</p>
               </div>
             </div>
 
@@ -576,7 +638,7 @@
                   <strong>Installment 2</strong>
                   <span class="inst-price">₹ 1,12,313 + GST (₹ 1,32,530)</span>
                 </div>
-                <p>At start of Term 2 (Coverable via Axis Bank Education Loan)</p>
+                <p>At start of Term 2 (100% Loan available)</p>
               </div>
             </div>
           </div>
@@ -586,8 +648,8 @@
           <div class="calc-header">
             <i class="fa-solid fa-building-columns highlight-maroon"></i>
             <div>
-              <h3>Financing Options by Axis Bank</h3>
-              <p>Pre-approved student loan facility with salary moratorium</p>
+              <h3>Axis Bank Student Loan</h3>
+              <p>Pre-approved education loan with salary moratorium</p>
             </div>
           </div>
 
@@ -595,30 +657,30 @@
             <div class="perks-list">
               <div class="perk-item">
                 <i class="fa-solid fa-circle-check"></i>
-                <span><strong>Loan Coverage:</strong> Up to ₹ 2,35,169 + GST sanctioned directly through Axis Bank.</span>
+                <span><strong>Loan Amount:</strong> Up to ₹ 2,35,169 + GST sanctioned directly by Axis Bank.</span>
               </div>
               <div class="perk-item">
                 <i class="fa-solid fa-circle-check"></i>
-                <span><strong>Preferential ROI:</strong> ~13% per annum.</span>
+                <span><strong>Interest Rate:</strong> ~13% ROI per annum.</span>
               </div>
               <div class="perk-item">
                 <i class="fa-solid fa-circle-check"></i>
-                <span><strong>Moratorium Period:</strong> EMIs start <strong>6 months AFTER</strong> starting your job as Assistant Manager.</span>
+                <span><strong>Salary Moratorium:</strong> EMIs start <strong>6 months AFTER</strong> starting your job as Assistant Manager.</span>
               </div>
               <div class="perk-item">
                 <i class="fa-solid fa-circle-check"></i>
-                <span><strong>Automatic Deduction:</strong> Deducted conveniently from your monthly salary.</span>
+                <span><strong>Net Salary:</strong> EMIs are automatically deducted from monthly salary.</span>
               </div>
             </div>
 
             <div class="emi-result-card">
-              <span class="result-label">Net In-Program Earnings</span>
+              <span class="result-label">Net Earnings during 1 Year</span>
               <div class="result-amount highlight-green">~ ₹ 2,15,000</div>
-              <span class="result-subtext">Earned back through stipends + salary payouts before the 1-year mark</span>
+              <span class="result-subtext">Stipend (M1–4) + Salary from Month 5 recovered before the 1-year mark</span>
             </div>
 
             <button class="btn btn-primary btn-block mt-4" onclick="scrollToLeadForm()">
-              <i class="fa-solid fa-paper-plane"></i> Apply &amp; Avail Loan Assistance
+              <i class="fa-solid fa-cloud-arrow-up"></i> Apply &amp; Avail Loan Assistance
             </button>
           </div>
         </div>
@@ -626,25 +688,25 @@
     </div>
   </section>
 
-  <!-- Section 5: Eligibility Criteria (Freshers Allowed!) -->
+  <!-- Section 5: Eligibility Criteria (Freshers Welcome) -->
   <section class="section eligibility-section" id="eligibility">
     <div class="container">
       <div class="section-header text-center">
         <span class="section-tag">Candidate Criteria</span>
-        <h2 class="section-title">Clear &amp; Inclusive <span class="highlight-maroon">Eligibility Criteria</span></h2>
-        <p class="section-subtitle">Fresh graduates are encouraged to apply! No prior work experience needed.</p>
+        <h2 class="section-title">Eligibility <span class="highlight-maroon">Criteria</span></h2>
+        <p class="section-subtitle">Freshers and final year students are eligible to apply.</p>
       </div>
 
       <div class="eligibility-grid">
         <div class="eligibility-card eligible-box">
           <div class="card-status-header">
             <div class="status-icon"><i class="fa-solid fa-circle-check"></i></div>
-            <h3>Eligible If You Meet:</h3>
+            <h3>Eligible If:</h3>
           </div>
 
           <div class="criteria-list">
             <div class="criteria-item">
-              <div class="criteria-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Qualification</div>
+              <div class="criteria-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Score</div>
               <p>
                 <strong>Minimum 50%</strong> in Graduation (10+2+3 pattern compulsory).<br>
                 <span class="highlight-green"><strong>No minimum percentage criteria</strong> for 10th and 12th!</span><br>
@@ -655,14 +717,14 @@
             <div class="criteria-item">
               <div class="criteria-badge"><i class="fa-solid fa-calendar-check"></i> Age Limit</div>
               <p>
-                Must be between <strong>21 to 30 years of age</strong> at the time of application.
+                Between <strong>21 to 30 years of age</strong> at application date.
               </p>
             </div>
 
             <div class="criteria-item">
-              <div class="criteria-badge"><i class="fa-solid fa-briefcase"></i> Work Experience</div>
+              <div class="criteria-badge"><i class="fa-solid fa-briefcase"></i> Experience</div>
               <p>
-                Work experience is <strong>NOT an eligibility criterion</strong>! Freshers are welcome. Candidates with prior work experience are also eligible.
+                Work experience is <strong>NOT required</strong>. Fresh graduates welcome.
               </p>
             </div>
           </div>
@@ -680,155 +742,19 @@
 
           <div class="criteria-list">
             <div class="criteria-item">
-              <div class="criteria-badge alert"><i class="fa-solid fa-user-xmark"></i> Conflict of Interest</div>
-              <p>Immediate relative currently working at Axis Bank (in accordance with Axis Bank relative hiring policy).</p>
+              <div class="criteria-badge alert"><i class="fa-solid fa-user-xmark"></i> Relative Policy</div>
+              <p>Immediate relative currently employed at Axis Bank.</p>
             </div>
 
             <div class="criteria-item">
-              <div class="criteria-badge alert"><i class="fa-solid fa-ban"></i> Age Out of Range</div>
-              <p>Age is below 21 years or above 30 years at application date.</p>
+              <div class="criteria-badge alert"><i class="fa-solid fa-ban"></i> Age Exceeded</div>
+              <p>Age is below 21 years or above 30 years.</p>
             </div>
 
             <div class="criteria-item">
-              <div class="criteria-badge alert"><i class="fa-solid fa-triangle-exclamation"></i> Disciplinary Action</div>
-              <p>Subjected to disciplinary proceedings or termination for misconduct by previous employers.</p>
-            </div>
-
-            <div class="criteria-item">
-              <div class="criteria-badge alert"><i class="fa-solid fa-gavel"></i> Criminal / Legal Proceedings</div>
+              <div class="criteria-badge alert"><i class="fa-solid fa-gavel"></i> Disciplinary / Criminal Action</div>
               <p>Convicted under criminal statutes or with pending legal actions.</p>
             </div>
-          </div>
-
-          <div class="ineligible-advice">
-            <i class="fa-solid fa-circle-info"></i> Original graduation marksheets and degree certificate must be submitted at the time of campus joining.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 6: Selection Steps -->
-  <section class="section process-section" id="process">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Selection Funnel</span>
-        <h2 class="section-title">4 Simple Steps to <span class="highlight-maroon">Your Axis Bank Career</span></h2>
-        <p class="section-subtitle">Nominal ₹118 application fee to access the proctored test and panel interview.</p>
-      </div>
-
-      <div class="process-timeline">
-        <div class="timeline-step">
-          <div class="step-num-node">1</div>
-          <div class="step-card">
-            <div class="step-card-icon"><i class="fa-solid fa-file-pen"></i></div>
-            <h4>Online Registration</h4>
-            <p>Fill out the application form and pay the nominal Rs.118 (incl. GST) assessment fee.</p>
-            <span class="step-meta"><i class="fa-solid fa-tag"></i> ₹118 Exam Fee</span>
-          </div>
-        </div>
-
-        <div class="timeline-step">
-          <div class="step-num-node">2</div>
-          <div class="step-card">
-            <div class="step-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
-            <h4>Online Assessments</h4>
-            <p>Proctored exam covering Verbal Ability, Analytical Ability, Numerical Ability, and Listening Comprehension.</p>
-            <span class="step-meta"><i class="fa-solid fa-clock"></i> AI Proctored</span>
-          </div>
-        </div>
-
-        <div class="timeline-step">
-          <div class="step-num-node">3</div>
-          <div class="step-card">
-            <div class="step-card-icon"><i class="fa-solid fa-users"></i></div>
-            <h4>Adda247 Skills Interview</h4>
-            <p>Virtual interview with the Adda247 Skills faculty panel to assess communication and role fit.</p>
-            <span class="step-meta"><i class="fa-solid fa-video"></i> Online Video</span>
-          </div>
-        </div>
-
-        <div class="timeline-step">
-          <div class="step-num-node highlight-node"><i class="fa-solid fa-award"></i></div>
-          <div class="step-card highlight-card">
-            <div class="step-card-icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
-            <h4>Admission Letter &amp; Joining</h4>
-            <p>Receive your official Axis Bank Admission Letter. Complete enrollment, avail loan &amp; join campus!</p>
-            <span class="step-meta success"><i class="fa-solid fa-check"></i> Assured AM Role</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 7: FAQs -->
-  <section class="section faqs-section" id="faqs">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Got Questions?</span>
-        <h2 class="section-title">Frequently Asked <span class="highlight-maroon">Questions</span></h2>
-        <p class="section-subtitle">Everything you need to know about the Axis Bank Young Bankers Program.</p>
-      </div>
-
-      <div class="faqs-accordion-wrapper">
-        <div class="faq-item active">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span>Are freshers eligible for the ABYB Program?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <p>
-              Yes! Fresh graduates with 50% or above in graduation (any stream) are fully eligible. No prior work experience is required. Even final year students awaiting final semester results can apply.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span>What is the difference between ABYB and CBG?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <p>
-              <strong>ABYB (Axis Bank Young Bankers):</strong> Recruits freshers/graduates as <strong>Assistant Manager (₹4.54 LPA)</strong> for retail branch relationship banking with a PG Diploma from NITTE University.
-              <br><strong>CBG (Commercial Banking Group):</strong> Recruits experienced candidates (1–2 yrs sales/service) as <strong>Deputy Manager (₹6.3–6.8 LPA)</strong> for commercial/enterprise SME banking.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span>What is the total fee and does it include hostel/boarding?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <p>
-              The total program fee is ₹2,37,288 + 18% GST (Total: ₹2,80,000). Yes, it fully includes tuition, academic materials, boarding (air-conditioned hostel accommodation), and all meals during the 4 months of campus training.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span>How does the Axis Bank Education Loan work?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <p>
-              Axis Bank provides an education loan for the balance fee of ₹2,35,169 + GST at ~13% interest. You only pay the registration fee initially. EMIs start <strong>6 months after you start your job</strong> and are automatically deducted from your salary.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span>What is the application fee for registration?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <p>
-              The application fee is Rs.118 (incl. GST). It covers your proctored assessment and interview slot.
-            </p>
           </div>
         </div>
       </div>
@@ -847,45 +773,51 @@
       </div>
       <div class="sticky-actions">
         <button class="btn btn-outline-white btn-sm" onclick="openEligibilityModal()">
-          Check Eligibility
+          Eligibility Test
         </button>
         <button class="btn btn-primary btn-sm" onclick="scrollToLeadForm()">
-          <i class="fa-solid fa-bolt"></i> Apply (₹118)
+          <i class="fa-solid fa-cloud-arrow-up"></i> Apply &amp; Upload
         </button>
       </div>
     </div>
   </div>
 
-  <!-- LEADS DASHBOARD FLOATING BUTTON & MODAL (For user's digital marketing lead tracker!) -->
-  <button class="leads-dashboard-toggle" onclick="openLeadsDashboard()" title="View Captured Leads">
+  <!-- LEADS & CREDENTIAL CRM DASHBOARD (FLOATING BUTTON) -->
+  <button class="leads-dashboard-toggle" onclick="openLeadsDashboard()" title="View Leads & Credentials">
     <i class="fa-solid fa-database"></i> Leads CRM <span class="leads-badge-count" id="leadsCountBadge">0</span>
   </button>
 
   <div class="modal-overlay" id="leadsDashboardModal" onclick="closeModalOnOverlay(event)">
-    <div class="modal-dialog glass-panel" style="max-width: 800px;">
+    <div class="modal-dialog glass-panel" style="max-width: 900px;">
       <button class="modal-close-btn" onclick="closeLeadsDashboard()"><i class="fa-solid fa-xmark"></i></button>
       <div class="modal-header">
-        <span class="badge-pill"><i class="fa-solid fa-chart-pie"></i> Campaign Lead Manager</span>
-        <h3>Digital Marketing Leads Dashboard</h3>
-        <p>Real-time leads captured from this landing page. Export directly to CSV for calling &amp; WhatsApp follow-ups.</p>
+        <span class="badge-pill"><i class="fa-solid fa-chart-pie"></i> Campus Lead Manager</span>
+        <h3>Student Leads &amp; Credentials CRM</h3>
+        <p>Real-time candidate submissions with uploaded credentials. WhatsApp students or download CSV directly.</p>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-        <span style="font-weight: 700; font-size: 0.95rem;">Total Leads: <strong id="totalLeadsCount" class="highlight-maroon">0</strong> / 100 Goal</span>
-        <button class="btn btn-primary btn-sm" onclick="exportLeadsToCsv()">
-          <i class="fa-solid fa-file-csv"></i> Download Leads (CSV)
-        </button>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+        <span style="font-weight: 700; font-size: 0.95rem;">
+          Total University Leads: <strong id="totalLeadsCount" class="highlight-maroon">0</strong> / 100 Target
+        </span>
+        <div style="display: flex; gap: 8px;">
+          <button class="btn btn-primary btn-sm" onclick="exportLeadsToCsv()">
+            <i class="fa-solid fa-file-csv"></i> Export CSV (Excel)
+          </button>
+        </div>
       </div>
 
       <div class="lead-table-wrapper">
         <table class="lead-table">
           <thead>
             <tr>
-              <th>Date &amp; Time</th>
-              <th>Name</th>
-              <th>Mobile</th>
-              <th>Email</th>
-              <th>State / City</th>
-              <th>Grad %</th>
+              <th>Date</th>
+              <th>Student Name</th>
+              <th>WhatsApp</th>
+              <th>College &amp; Degree</th>
+              <th>Score</th>
+              <th>Credentials</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody id="leadsTableBody">
@@ -893,9 +825,10 @@
           </tbody>
         </table>
       </div>
-      <div style="margin-top: 14px; font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-        <span><i class="fa-solid fa-check highlight-green"></i> Stores leads locally in browser &amp; ready for webhook/CRM.</span>
-        <button class="btn btn-text btn-sm" onclick="populateSampleLeads()">+ Add Sample Leads</button>
+
+      <div style="margin-top: 14px; font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="fa-solid fa-shield-check highlight-green"></i> Stores leads &amp; credentials locally in browser.</span>
+        <button class="btn btn-text btn-sm" onclick="populateSampleLeads()">+ Add Sample Uni Leads</button>
       </div>
     </div>
   </div>
@@ -985,7 +918,7 @@
       <div class="footer-col">
         <h4>Program Links</h4>
         <ul class="footer-links">
-          <li><a href="#about">About ABYB</a></li>
+          <li><a href="#highlights">Key Highlights</a></li>
           <li><a href="#snapshot">Snapshot &amp; ROI</a></li>
           <li><a href="#curriculum">Campus Curriculum</a></li>
           <li><a href="#fees">Fee &amp; Axis Bank Loan</a></li>
@@ -994,7 +927,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Programs</h4>
+        <h4>Other Programs</h4>
         <ul class="footer-links">
           <li><a href="index.html">Axis Bank ABYB (Assistant Manager)</a></li>
           <li><a href="cbg.html">Axis Bank CBG (Deputy Manager)</a></li>
@@ -1002,7 +935,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Admissions Desk</h4>
+        <h4>Campus Admissions Desk</h4>
         <p class="contact-line"><i class="fa-solid fa-envelope"></i> abyb.support@adda247.com</p>
         <p class="contact-line"><i class="fa-solid fa-phone"></i> 1800-120-247 (Toll Free)</p>
         <div class="mt-3">
